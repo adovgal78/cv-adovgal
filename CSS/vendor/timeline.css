@@ -1,0 +1,88 @@
+.timeline {
+  width: 100%;
+  padding: 3% 0% 0% 0%;
+  position: relative;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: calc(33% + 2px);
+  bottom: 5px;
+  width: 2px;
+  /* background: #2173af; */
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: .5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  /* border: 2px solid #2173af;
+  background-color: #FFFBFC; */
+  border-radius: 100%;
+  top: 35%;
+  right: -11px;
+  z-index: 55;
+}
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .title span {
+  margin: 0;
+  /* color: #aaa; */
+}
+.entry .body {
+  margin: 0 0 1em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+.entry .body h2 {
+  /* line-height: .2em; */
+  margin-top: -2px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 13pt;
+  font-weight: 500;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  /* color: #aaa; */
+  padding-left: 0;
+  margin: 0px;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
+}

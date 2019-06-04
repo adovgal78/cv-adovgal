@@ -1,0 +1,204 @@
+.leftColumn {
+    color: var(--primary);
+    background-color: var(--page);
+    float: left;
+    width: 65%;
+    padding: 0% 4% 3% 5%;
+    position: relative;
+    min-height: 297mm;
+}
+
+.rightColumn {
+    /* color: var(--page); */
+    background-color: var(--primary);
+    /* float: left; */
+    /* display: flex;
+    flex-direction: column; */
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+}
+
+.underPhoto {
+    padding: 10%;
+    /* flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative; */
+}
+
+address {
+    padding: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-style: normal;
+}
+
+#rskills {
+    padding-bottom: 4.5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* font-style: normal; */
+}
+
+#img-container-left {
+    width: 100%;
+    display: none;
+    text-align: center;
+    /* position: relative; */
+}
+
+#img-container-right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* position: relative; */
+}
+.CVImgLeft, .CVImgRight {
+    width: 100%;
+    display: block;
+}
+
+#cv-img-left-label,
+#cv-img-right-label {
+    /* width: 100px; */
+    display: none;
+    /* background: var(--secondaryB); */
+    padding: 35px 35px 0px;
+    /* color: var(--secondary); */
+    font-size: 26pt;
+    /* position: absolute;
+    left: 0;
+    right: 0; */
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    margin-top: -9mm;
+    font-size: 14pt;
+    padding-bottom: 3mm;
+}
+
+h3 {
+    margin-top: 10mm;
+}
+
+.ColorList b,
+.ColorList span {
+    color: var(--secondary);
+}
+
+.tooltip:before {
+    color: var(--page);
+    background-color: var(--primaryA);
+}
+
+.tooltip:after {
+    border-top: 10px solid var(--primaryA);
+}
+
+/* vertical line */
+
+.timeline:before {
+    background: var(--primary);
+}
+
+/* circle */
+
+.entry .title:before {
+    border: 2px solid var(--primary);
+    background-color: var(--page);
+}
+
+/* company */
+
+.entry .title span {
+    color: var(--secondary);
+}
+
+/* duties */
+
+.entry .body ul {
+    color: var(--secondary);
+}
+
+.c100 {
+    background-color: var(--secondaryA);
+}
+
+.c100 span {
+    color: var(--secondaryA);
+}
+
+.c100 .bar,
+.c100 .fill {
+    border-color: var(--primary) !important;
+}
+
+.c100:hover>span {
+    color: var(--primary);
+}
+
+.c100:after {
+    background-color: var(--page);
+}
+
+.fa-spin-hover:hover {
+    -webkit-animation: fa-spin 1s infinite linear;
+    -moz-animation: fa-spin 1s infinite linear;
+    -o-animation: fa-spin 1s infinite linear;
+    animation: fa-spin 1s infinite linear;
+}
+
+.CircleTitle {
+    word-spacing: 8.2mm;
+    margin-left: 3mm;
+}
+
+@media only screen and (max-width:740px) {
+    .leftColumn {
+        width: 100%;
+        min-height: 100px;
+        /* height: auto; */
+        padding: 1% 4% 5% 8%;
+    }
+    .rightColumn {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: static;
+        clear: both;
+        padding: 5% 4% 5% 8%;
+    }
+    .underPhoto {
+        padding: 0;
+    }
+    address {
+        padding: 0;
+        position: static;
+    }
+    #img-container-left {
+        display: block;
+    }
+    #img-container-right {
+        display: none;
+    }
+    /* .CVImgLeft {
+        display: block;
+    }
+    .CVImgRight {
+        display: none;
+    } */
+    .source {
+        display: none;
+    }
+    #rskills {
+        position: static;
+    }
+}
